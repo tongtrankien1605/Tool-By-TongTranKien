@@ -6,9 +6,9 @@
 [Script]
 # ~ By Tong Tran Kien 2004
 # ～ Egern transfer to Shadowrocket & Surge & LanceX
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://cdn.tongtrankien.io.vn/scripts/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://worker.tongtrankien.io.vn/scripts/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
 
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://cdn.tongtrankien.io.vn/global/deleteHeader.js, timeout=60
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://worker.tongtrankien.io.vn/global/deleteHeader.js, timeout=60
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
